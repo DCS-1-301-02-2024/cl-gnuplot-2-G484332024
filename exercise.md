@@ -55,6 +55,8 @@ set xtics format "%m/%d"
 set datafile separator comma
 set title "八王子の気温(過去1年間)"
 set grid
+set ylabel "温度"
+set xlabel "日付"
 plot "weather2024.csv"  using 1:2 w l title "最高気温", "weather2024.csv" using 1:3 w l title "最高気温(平年)", "weather2024.csv" using 1:4 w l title "最低気温", "weather2024.csv" using 1:5 w l title "最低気温(平年)"
 ```
 
